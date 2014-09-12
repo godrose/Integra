@@ -1,4 +1,5 @@
 using Integra.Core.Contracts;
+using Integra.Core.Fake.Contracts;
 
 namespace Integra.Core
 {

@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Integra.Core.Contracts;
+using Integra.Core.Fake.Contracts;
 
 namespace Integra.Core
 {
@@ -19,7 +20,7 @@ namespace Integra.Core
             var calls = methodCalls as object[] ?? methodCalls.ToArray();
             VisitMethodCalls(new MethodCallVisitor<TService>(fake) as IMethodCallVisitor<TService>, calls);
             VisitMethodCalls(new MethodCallWithResultVisitor<TService>(fake) as IMethodCallWithResultVisitor<TService>, calls);
-            return fake.GetFake();
+            return fake.GetFaked();
         }
 
         private void VisitMethodCalls<TVisitor>(TVisitor visitor, IEnumerable<object> methodCalls)

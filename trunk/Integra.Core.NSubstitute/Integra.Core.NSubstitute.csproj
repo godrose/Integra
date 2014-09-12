@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D84DDF2E-CE8F-4380-976C-C49224B8C54D}</ProjectGuid>
+    <ProjectGuid>{54242EA9-B90A-4890-A0BE-611B413D8AAE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Integra.Core</RootNamespace>
-    <AssemblyName>Integra.Core</AssemblyName>
+    <RootNamespace>Integra.Core.NSubstitute</RootNamespace>
+    <AssemblyName>Integra.Core.NSubstitute</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NSubstitute">
+      <HintPath>..\packages\NSubstitute.1.7.2.0\lib\NET45\NSubstitute.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -39,30 +42,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppendCallsVisitorHelper.cs" />
-    <Compile Include="HaveDelegateWrapperBase.cs" />
-    <Compile Include="MethodCall.cs" />
-    <Compile Include="MethodCallbacksContainerBase.cs" />
-    <Compile Include="MethodCallVisitor.cs" />
-    <Compile Include="MethodCallWithResult.cs" />
-    <Compile Include="MethodCallWithResultVisitor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ResultWrapper.cs" />
-    <Compile Include="ServiceCall.cs" />
-    <Compile Include="ServiceFactory.cs" />
+    <Compile Include="SubFake.cs" />
+    <Compile Include="SubFakeCallback.cs" />
+    <Compile Include="SubFakeProvider.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Integra.Core.Contracts\Integra.Core.Contracts.csproj">
-      <Project>{612f3d4f-7f11-4382-b424-ab0623be6716}</Project>
-      <Name>Integra.Core.Contracts</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\Integra.Core.Fake.Contracts\Integra.Core.Fake.Contracts.csproj">
       <Project>{ea1c22ae-0b9e-43ff-a590-2523f0ab6403}</Project>
       <Name>Integra.Core.Fake.Contracts</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Integra.Core.Moq\Integra.Core.Moq.csproj">
-      <Project>{22bdea38-72be-47bf-81e4-8f71d3d5c500}</Project>
-      <Name>Integra.Core.Moq</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

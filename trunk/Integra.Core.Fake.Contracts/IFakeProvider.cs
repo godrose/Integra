@@ -1,4 +1,4 @@
-﻿namespace Integra.Core.Contracts
+﻿namespace Integra.Core.Fake.Contracts
 {
     public interface IFakeProvider
     {

@@ -46,7 +46,6 @@
     <Compile Include="IActionWrapper.cs" />
     <Compile Include="IAppendCallbacks.cs" />
     <Compile Include="ICallbackYielder.cs" />
-    <Compile Include="IFakeProvider.cs" />
     <Compile Include="IHaveCallbacks.cs" />
     <Compile Include="IHaveMethods.cs" />
     <Compile Include="IMethodCall.cs" />
@@ -64,6 +63,12 @@
     <Compile Include="MethodCallbackWithResultTemplate.cs" />
     <Compile Include="ProgressMessages.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Integra.Core.Fake.Contracts\Integra.Core.Fake.Contracts.csproj">
+      <Project>{ea1c22ae-0b9e-43ff-a590-2523f0ab6403}</Project>
+      <Name>Integra.Core.Fake.Contracts</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
