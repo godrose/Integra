@@ -5,8 +5,6 @@ VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integra.Core", "Integra.Core\Integra.Core.csproj", "{D84DDF2E-CE8F-4380-976C-C49224B8C54D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integra.Core.Moq", "Integra.Core.Moq\Integra.Core.Moq.csproj", "{22BDEA38-72BE-47BF-81E4-8F71D3D5C500}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integra.Core.Contracts", "Integra.Core.Contracts\Integra.Core.Contracts.csproj", "{612F3D4F-7F11-4382-B424-AB0623BE6716}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integra.Core.FakeItEasy", "Integra.Core.FakeItEasy\Integra.Core.FakeItEasy.csproj", "{F541A30D-2578-460F-B957-F8F0AF62AB43}"
@@ -14,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integra.Core.NSubstitute", "Integra.Core.NSubstitute\Integra.Core.NSubstitute.csproj", "{54242EA9-B90A-4890-A0BE-611B413D8AAE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integra.Core.Fake.Contracts", "Integra.Core.Fake.Contracts\Integra.Core.Fake.Contracts.csproj", "{EA1C22AE-0B9E-43FF-A590-2523F0AB6403}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integra.Core.Moq", "Integra.Core.Moq\Integra.Core.Moq.csproj", "{093452D9-8688-4594-B39E-21ABEF2833BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +25,6 @@ Global
 		{D84DDF2E-CE8F-4380-976C-C49224B8C54D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D84DDF2E-CE8F-4380-976C-C49224B8C54D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D84DDF2E-CE8F-4380-976C-C49224B8C54D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{22BDEA38-72BE-47BF-81E4-8F71D3D5C500}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{22BDEA38-72BE-47BF-81E4-8F71D3D5C500}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{22BDEA38-72BE-47BF-81E4-8F71D3D5C500}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{22BDEA38-72BE-47BF-81E4-8F71D3D5C500}.Release|Any CPU.Build.0 = Release|Any CPU
 		{612F3D4F-7F11-4382-B424-AB0623BE6716}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{612F3D4F-7F11-4382-B424-AB0623BE6716}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{612F3D4F-7F11-4382-B424-AB0623BE6716}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,6 +41,10 @@ Global
 		{EA1C22AE-0B9E-43FF-A590-2523F0AB6403}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA1C22AE-0B9E-43FF-A590-2523F0AB6403}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA1C22AE-0B9E-43FF-A590-2523F0AB6403}.Release|Any CPU.Build.0 = Release|Any CPU
+		{093452D9-8688-4594-B39E-21ABEF2833BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{093452D9-8688-4594-B39E-21ABEF2833BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{093452D9-8688-4594-B39E-21ABEF2833BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{093452D9-8688-4594-B39E-21ABEF2833BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
