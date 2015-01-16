@@ -2,6 +2,7 @@
 
 namespace Integra.Core.Contracts
 {
+
     public interface IOperation
     {
         IOperation WithMethod(Action runMethod);
